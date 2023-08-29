@@ -29,7 +29,7 @@ class StartActivityHook(classLoader: ClassLoader) : BaseHook(classLoader) {
             ) {
                 intent.component = ComponentName(
                     intent.component?.packageName ?: packageName,
-                    "com.bilibili.video.videodetail.VideoDetailsActivity"
+                    "tv.danmaku.bili.ui.video.VideoDetailsActivity"
                 )
                 intent.data = Uri.parse(uri.replace("bilibili://story/", "bilibili://video/"))
             }
